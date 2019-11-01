@@ -3,7 +3,7 @@ const TemplateConfig = {
     navs:
     {
         "主页": "/",
-        "关于吃什么": "/",
+        "关于吃什么": "/aboutus",
         "英伦四季高光": "/",
         "英国吃什么": "/",
         "英国玩什么": "/",
@@ -85,7 +85,13 @@ const TemplateConfig = {
             "coverImage": "https://i.imgur.com/MrRLOC4.png",
             "link": "/posts/categories/游记?extags=英国&pagetype=other-tour",
         }
-    ]
+    ],
+    aboutUs:{
+        "title":"关于吃什么",
+        "subTitle":"SubTitle",
+        "description":"Description",
+        "content":"This is the content"
+    }
 }
 
 module.exports = TemplateConfig;
