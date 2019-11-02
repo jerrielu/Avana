@@ -168,7 +168,7 @@ header[role="header"]{ padding-top:80px; padding-bottom:39px}
 
 header[role="header"] h1{ padding:0; margin:0}
 
-header[role="header"] h1 > a{ max-width:66px; display:block; float:left}
+header[role="header"] h1 > a{ max-width:100px; display:block; float:left}
 
 header[role="header"] nav{ padding-top:10px;transition-delay: 0s;
 
