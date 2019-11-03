@@ -6,6 +6,9 @@
     padding: 3px;
 }
 
+section.blog-content article, .bog-header h2{
+    text-transform: capitalize;
+}
 .filterTagContainer{
     line-height: 2.5;
     margin-bottom: 100px;

@@ -14,6 +14,8 @@ const TemplateConfig = {
         "all": {
             "title": "大杂烩",
             "subTitle": "这里什么都有",
+            "tags":["英国"],
+            "extags":[],
             "filterTags": [],
             "pageType": "all"
         },
@@ -21,30 +23,40 @@ const TemplateConfig = {
         "uk-tour": {
             "title": "英伦四季高光",
             "subTitle": "游记",
+            "tags":["英国"],
+            "extags":[],
             "filterTags": [],
             "pageType": "uk-tour"
         },
         "uk-food": {
             "title": "英国吃什么",
             "subTitle": "美食",
-            "filterTags": [],
+            "tags":["英国"],
+            "extags":[],
+            "filterTags": ["英格兰","威尔士"," 苏格兰","米其林"],
             "pageType": "uk-food"
         },
         "uk-play": {
             "title": "英国玩什么",
             "subTitle": "攻略",
+            "tags":["英国"],
+            "extags":[],
             "filterTags": [],
             "pageType": "uk-play"
         },
         "uk-guide": {
             "title": "英国很贵么",
             "subTitle": "签证、交通、住宿及餐饮预定",
+            "tags":["英国"],
+            "extags":[],
             "filterTags": [],
             "pageType": "uk-guide"
         },
         "other-tour": {
             "title": "英国之外呢",
             "subTitle": "其他地区游记",
+            "tags":[],
+            "extags":["英国"],
             "filterTags": [],
             "pageType": "other-tour"
         }

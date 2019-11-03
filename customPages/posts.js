@@ -34,7 +34,7 @@ const Posts = (props) => {
                             <div className="filterTagContainer">
                                 {
                                     pageType.filterTags.map((tag, index) => {
-                                        var link = "/posts/categories/" + props.categories[0] + "?pagetype=" + pageType.pageType + "&tags=" + [...props.tags, tag].join(",") + "&extags=" + props.exTags.join(",");
+                                        var link = "/posts/categories/" + props.categories[0] + "?pagetype=" + pageType.pageType + "&tags=" + [...pageType.tags, tag].join(",") + "&extags=" + [...pageType.extags];
                                         return (
                                             <a key={index} className="filterTag" href={link}>{tag}</a>
                                         );
