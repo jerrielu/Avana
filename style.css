@@ -82,6 +82,20 @@ img{
     margin-top:20rem;
 }
 
-.nav-item{
-    display: block;
+header[role="header"] nav #menu-button{
+    z-index:9999!important;
+}
+
+header[role="header"] nav ul {
+    z-index:9990!important;
+}
+
+figure.effect-oscar:hover {
+
+	background-color: #404040!important;
+
+}
+
+figure.effect-oscar img {
+    opacity: 0.6!important;
 }

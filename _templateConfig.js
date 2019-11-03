@@ -4,16 +4,17 @@ const TemplateConfig = {
     {
         "主页": "/",
         "关于吃什么": "/aboutus",
-        "英伦四季高光": "/",
-        "英国吃什么": "/",
-        "英国玩什么": "/",
-        "英国很贵么": "/",
-        "英国之外呢": "/",
+        "英伦四季高光": "/posts/categories/游记?tags=英国&pagetype=uk-tour",
+        "英国吃什么": "/posts/categories/美食?tags=英国&pagetype=uk-food",
+        "英国玩什么": "/posts/categories/攻略?tags=英国&pagetype=uk-play",
+        "英国很贵么": "/posts/categories/预定?tags=英国&pagetype=uk-guide",
+        "英国之外呢": "/posts/categories/游记?extags=英国&pagetype=other-tour",
     },
     pageTypes: {
         "all": {
             "title": "大杂烩",
             "subTitle": "这里什么都有",
+            "description":"",
             "tags":["英国"],
             "extags":[],
             "filterTags": [],
@@ -23,6 +24,7 @@ const TemplateConfig = {
         "uk-tour": {
             "title": "英伦四季高光",
             "subTitle": "游记",
+            "description":"",
             "tags":["英国"],
             "extags":[],
             "filterTags": [],
@@ -31,6 +33,7 @@ const TemplateConfig = {
         "uk-food": {
             "title": "英国吃什么",
             "subTitle": "美食",
+            "description":"常常听人说英国无美食，也看过炸鱼被讽刺，土豆被内涵，所以希望能够通过《英国吃什么》专题为英国的食物正名，跟大家分享在英国旅行的时候有哪些值得体验的地道美食。每一片介绍的标题当中，［推荐］是指如果在附近玩耍的话可以去尝试的好吃的餐厅，［精选］是指在［推荐］餐厅当中都比较优秀的代表，而［必吃］则是指即使不在附近也值得特地去吃的餐厅。",
             "tags":["英国"],
             "extags":[],
             "filterTags": ["英格兰","威尔士"," 苏格兰","米其林"],
@@ -39,6 +42,7 @@ const TemplateConfig = {
         "uk-play": {
             "title": "英国玩什么",
             "subTitle": "攻略",
+            "description":"",
             "tags":["英国"],
             "extags":[],
             "filterTags": [],
@@ -47,6 +51,7 @@ const TemplateConfig = {
         "uk-guide": {
             "title": "英国很贵么",
             "subTitle": "签证、交通、住宿及餐饮预定",
+            "description":"",
             "tags":["英国"],
             "extags":[],
             "filterTags": [],
@@ -55,6 +60,7 @@ const TemplateConfig = {
         "other-tour": {
             "title": "英国之外呢",
             "subTitle": "其他地区游记",
+            "description":"",
             "tags":[],
             "extags":["英国"],
             "filterTags": [],

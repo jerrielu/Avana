@@ -31,6 +31,7 @@ const Posts = (props) => {
                             <header>
                                 <h2><span>{pageType.title}</span>{pageType.subTitle}</h2>
                             </header>
+                            <p>{pageType.description}</p>
                             <div className="filterTagContainer">
                                 {
                                     pageType.filterTags.map((tag, index) => {
