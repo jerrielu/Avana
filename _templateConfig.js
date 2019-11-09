@@ -24,10 +24,10 @@ const TemplateConfig = {
         "uk-tour": {
             "title": "英伦四季高光",
             "subTitle": "游记",
-            "description":"",
+            "description":"英国只有国会塔桥伦敦眼炸鱼薯条大本钟吗？一起来看看你知道或者不知道的英伦四季有什么吧！",
             "tags":["英国"],
             "extags":[],
-            "filterTags": [],
+            "filterTags": ["春","夏","秋","冬"],
             "pageType": "uk-tour"
         },
         "uk-food": {
@@ -106,8 +106,8 @@ const TemplateConfig = {
     ],
     aboutUs:{
         "title":"关于吃什么",
-        "subTitle":"SubTitle",
-        "description":"Description",
+        "subTitle":"英国旅游指南",
+        "description":"游记作品曾发表于《杭州日报》, 摄影作品获松下徕美隐藏城市奖",
         "content":"吃什么网（www.eatsomemore.com）创立于2017年，主要更新世界各地的旅行游记。刚开始时，这个网站的意义仅在于记录美好的旅行体验。作为一名全职法务工作者，大部分时候我只能在公共假期或者双休日出行，以及编辑和发布文稿。随着越来越多小伙伴们的提问，本人经久不衰的旅行热情，以及在英国生活的时间越来越长，我决定将网站升级为“英国旅游指南”，以便更好地提供各类英国旅游资讯和多种亲测实评。当然，吃什么网仍然同时记录着其它国家和地区的旅行体验，以备不时之需哦。"
     }
 }
