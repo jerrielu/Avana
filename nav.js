@@ -11,6 +11,7 @@ const NavTemplate = () => {
                     <a href="/" title={Config.site}><img src={Config.logo} title={Config.site} alt={Config.site} className="logo" /></a>
                 </h1>
                 <nav role="header-nav" className="navy">
+                    <a className="header__search-trigger" href="#0"></a>
                     <ul>
                         {
                             Object.keys(TemplateConfig.navs).map((index, key) => {

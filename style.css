@@ -99,3 +99,13 @@ figure.effect-oscar:hover {
 figure.effect-oscar img {
     opacity: 0.6!important;
 }
+
+.header__search-trigger{
+    background-image: url(https://www.eatsomemore.com/fonts/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: contain;
+    float: right;
+    height: 19px;
+    margin-right: 31px;
+}

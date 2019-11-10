@@ -1,14 +1,20 @@
 import React from "react"
+import TemplateConfig from "./_templateConfig";
 
 const PostTemplate = (props) => {
-
+    let title = props.post.title;
+    props.post.metas.tags.forEach(o => {
+        if (TemplateConfig.titleTags.includes(o)) {
+            title = "[" + o + "] " + title;
+        }
+    });
     return (
         <main role="main-inner-wrapper" className="container">
             <div className="blog-details">
                 <article className="post-details" id="post-details">
                     <header role="bog-header" className="bog-header text-center">
                         <h3>{props.post.metas.date}</h3>
-                        <h2> {props.post.title}</h2>
+                        <h2> {title}</h2>
                     </header>
                     <figure>
                         <img src={props.post.metas.coverimage} alt="" className="img-responsive" />

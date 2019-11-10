@@ -12,10 +12,10 @@ const TemplateConfig = {
     },
     pageTypes: {
         "all": {
-            "title": "大杂烩",
-            "subTitle": "这里什么都有",
+            "title": "",
+            "subTitle": "",
             "description":"",
-            "tags":["英国"],
+            "tags":[""],
             "extags":[],
             "filterTags": [],
             "pageType": "all"
@@ -27,7 +27,7 @@ const TemplateConfig = {
             "description":"英国只有国会塔桥伦敦眼炸鱼薯条大本钟吗？一起来看看你知道或者不知道的英伦四季有什么吧！",
             "tags":["英国"],
             "extags":[],
-            "filterTags": ["春","夏","秋","冬","英格兰","威尔士"," 苏格兰","伦敦","推荐","精选","必去"],
+            "filterTags": ["春","夏","秋","冬","英格兰","威尔士"," 苏格兰","伦敦"],
             "pageType": "uk-tour"
         },
         "uk-food": {
@@ -36,7 +36,7 @@ const TemplateConfig = {
             "description":"常常听人说英国无美食，也看过炸鱼被讽刺，土豆被内涵，所以希望能够通过《英国吃什么》专题为英国的食物正名，跟大家分享在英国旅行的时候有哪些值得体验的地道美食。每一片介绍的标题当中，［推荐］是指如果在附近玩耍的话可以去尝试的好吃的餐厅，［精选］是指在［推荐］餐厅当中都比较优秀的代表，而［必去］则是指即使不在附近也值得特地去吃的餐厅。",
             "tags":["英国"],
             "extags":[],
-            "filterTags": ["英格兰","威尔士"," 苏格兰","伦敦","推荐","精选","必去"],
+            "filterTags": ["推荐","精选","必去","米其林","英格兰","威尔士"," 苏格兰","伦敦"],
             "pageType": "uk-food"
         },
         "uk-play": {
@@ -104,6 +104,8 @@ const TemplateConfig = {
             "link": "/posts/categories/游记?extags=英国&pagetype=other-tour",
         }
     ],
+    titleTags:["春","夏","秋","冬","推荐","精选","必去"]
+    ,
     aboutUs:{
         "title":"关于吃什么",
         "subTitle":"英国旅游指南",

@@ -5,7 +5,7 @@ const Posts = (props) => {
     var prev;
     var next;
     var categories;
-    var tags;
+
     if (props.prev) {
         prev = <span className="prev">
             <a href="#" className="fas fa-arrow-left nav-icon" onClick={props.prev}>
@@ -47,6 +47,12 @@ const Posts = (props) => {
                         <ul className="grid-lod effect-2" id="grid">
                             {
                                 props.posts.items.filter((o, i) => i % 2 != 0).map((md, index) => {
+                                    let title = md.title;
+                                    md.metas.tags.forEach(o => {      
+                                        if (TemplateConfig.titleTags.includes(o)) {
+                                            title = "[" + o + "] " + title;
+                                        }
+                                    });
                                     return (
                                         <li key={index}>
                                             <section className="blog-content">
@@ -59,7 +65,7 @@ const Posts = (props) => {
                                                     </figure>
                                                 </a>
                                                 <article>
-                                                    {md.title}
+                                                    {title}
                                                 </article>
                                             </section>
                                         </li>
@@ -72,6 +78,12 @@ const Posts = (props) => {
                         <ul className="grid-lod effect-2" id="grid">
                             {
                                 props.posts.items.filter((o, i) => i % 2 == 0).map((md, index) => {
+                                    let title = md.title;
+                                    md.metas.tags.forEach(o => {      
+                                        if (TemplateConfig.titleTags.includes(o)) {
+                                            title = "[" + o + "] " + title;
+                                        }
+                                    });
                                     return (
                                         <li key={index}>
                                             <section className="blog-content">
@@ -84,7 +96,7 @@ const Posts = (props) => {
                                                     </figure>
                                                 </a>
                                                 <article>
-                                                    {md.title}
+                                                    {title}
                                                 </article>
                                             </section>
                                         </li>
