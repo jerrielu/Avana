@@ -100,12 +100,17 @@ figure.effect-oscar img {
     opacity: 0.6!important;
 }
 
-.header__search-trigger{
-    background-image: url(https://www.eatsomemore.com/fonts/icon-search.svg);
-    background-repeat: no-repeat;
-    background-position: 100%;
-    background-size: contain;
-    float: right;
-    height: 19px;
-    margin-right: 31px;
+.searchBox{
+    float:right;
+    margin-right:30px;
+}
+
+.searchBox input[type="text"]{
+    width: 100%;
+    display: block;
+    outline: none;
+    border-bottom: 1px solid #bbbbbb;
+    background-color: inherit;
+    color: #404040;
+    line-height: 23px;
 }

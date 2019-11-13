@@ -20,6 +20,15 @@ const TemplateConfig = {
             "filterTags": [],
             "pageType": "all"
         },
+        "search": {
+            "title": "搜索",
+            "subTitle": "",
+            "description":"",
+            "tags":[""],
+            "extags":[],
+            "filterTags": [],
+            "pageType": "search"
+        },
 
         "uk-tour": {
             "title": "英伦四季高光",

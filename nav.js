@@ -11,7 +11,6 @@ const NavTemplate = () => {
                     <a href="/" title={Config.site}><img src={Config.logo} title={Config.site} alt={Config.site} className="logo" /></a>
                 </h1>
                 <nav role="header-nav" className="navy">
-                    <a className="header__search-trigger" href="#0"></a>
                     <ul>
                         {
                             Object.keys(TemplateConfig.navs).map((index, key) => {
@@ -21,6 +20,11 @@ const NavTemplate = () => {
                             })
                         }
                     </ul>
+                    <form role="search" method="get" className="searchBox" action="/posts/">
+                    <input type="hidden" placeholder="Search Here" name="pagetype" value="search" onChange={o => { }}  readOnly/> 
+                    <input type="text" placeholder="Search Here" name="search" onChange={o => { }}  /> 
+                    
+                    </form>
                 </nav>
             </div>
         </header>
