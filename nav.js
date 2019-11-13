@@ -20,16 +20,10 @@ const NavTemplate = () => {
                             })
                         }
                     </ul>
-<<<<<<< HEAD
                     <form role="search" method="get" className="searchBox" action="/posts/">
                     <input type="hidden" placeholder="Search Here" name="pagetype" value="search" onChange={o => { }}  readOnly/> 
                     <input type="text" placeholder="Search Here" name="search" onChange={o => { }}  /> 
                     
-=======
- <form role="search" method="get" className="searchBox" action="/posts/">
-                    <input type="hidden" placeholder="Search Here" name="pagetype" value="search" onChange={o => { }}  readOnly/> 
-                    <input type="text" placeholder="Search Here" name="search" onChange={o => { }}  /> 
->>>>>>> upstream/master
                     </form>
                 </nav>
             </div>
