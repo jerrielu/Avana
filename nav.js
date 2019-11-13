@@ -15,7 +15,7 @@ const NavTemplate = () => {
                         <li>
                             <form role="search" method="get" className="searchBox" action="/posts/">
                                 <input type="hidden" placeholder="Search Here" name="pagetype" value="search" onChange={o => { }} readOnly />
-                                <input type="text" placeholder="Search Here" name="search" onChange={o => { }} />
+                                <input type="text" placeholder="输入关键字搜索" name="search" onChange={o => { }} />
                             </form>
                         </li>
                         {
