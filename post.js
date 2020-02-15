@@ -29,7 +29,7 @@ const PostTemplate = (props) => {
                         {props.post.metas.categories.map((category, index) => {
                             return (
                                 <span className="entry__tax-list" key={index}>
-                                    <a href={"/categories/" + category}>{category.toUpperCase()}</a>
+                                    <a href={"/posts/categories/" + category+"?pagetype=search"}>{category.toUpperCase()}</a>
                                 </span>
                             );
                         })}
@@ -40,7 +40,7 @@ const PostTemplate = (props) => {
                         <span className="entry__tax-list entry__tax-list--pill">
                             {props.post.metas.tags.map((tag, index) => {
                                 return (
-                                    <a key={index} href={"/?tags=" + tag}>
+                                    <a key={index} href={"/?pagetype=search&tags=" + tag}>
                                         {tag}
                                     </a>
                                 );
