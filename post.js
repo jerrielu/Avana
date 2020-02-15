@@ -40,7 +40,7 @@ const PostTemplate = (props) => {
                         <span className="entry__tax-list entry__tax-list--pill">
                             {props.post.metas.tags.map((tag, index) => {
                                 return (
-                                    <a key={index} href={"/?pagetype=search&tags=" + tag}>
+                                    <a key={index} href={"/posts/?pagetype=search&tags=" + tag}>
                                         {tag}
                                     </a>
                                 );
