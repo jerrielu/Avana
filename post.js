@@ -16,9 +16,6 @@ const PostTemplate = (props) => {
                         <h3>{props.post.metas.date}</h3>
                         <h2> {title}</h2>
                     </header>
-                    <figure>
-                        <img src={props.post.metas.coverimage} alt="" className="img-responsive" />
-                    </figure>
                     <div className="enter-content">
                         {props.content}
                     </div>
