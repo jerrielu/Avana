@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title><%= site %></title>
-    <meta name="description" content="<%= description %>" />
-    <meta name="keywords" content="<%= keywords %>" />
+    <title><%= Config.site %></title>
+    <meta name="description" content="<%= Config.description %>" />
+    <meta name="keywords" content="<%= Config.keywords %>" />
 
     <!-- vendor meta start -->
     <meta charset="utf-8" />
@@ -21,11 +22,15 @@
     <noscript>Your browser does not support Javascript!</noscript>
     <div id="app"></div>
 
-
+    <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+        <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+        <% } %>
+        
     <!-- vendor js start-->
     <script src="https://kit.fontawesome.com/56f7faf3f4.js" async defer></script>
     <!-- vendor js end-->
 </body>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
 </html>
