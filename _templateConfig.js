@@ -36,7 +36,7 @@ const TemplateConfig = {
             "description":"英国只有国会塔桥伦敦眼炸鱼薯条大本钟吗？一起来看看你知道或者不知道的英伦四季有什么吧！",
             "tags":["英国"],
             "extags":[],
-            "filterTags": ["春","夏","秋","冬","英格兰","威尔士"," 苏格兰","伦敦"],
+            "filterTags": ["春","夏","秋","冬","英格兰","威尔士","苏格兰","伦敦"],
             "pageType": "uk-tour"
         },
         "uk-food": {

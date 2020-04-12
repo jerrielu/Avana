@@ -1,5 +1,7 @@
 import React from "react";
 import TemplateConfig from "../_templateConfig";
+import Config from "../../_config";
+import { Helmet } from "react-helmet";
 
 const Posts = (props) => {
     var prev;
@@ -24,6 +26,10 @@ const Posts = (props) => {
     var pageType = TemplateConfig.pageTypes[new URLSearchParams(window.location.search).get("pagetype")] || TemplateConfig.pageTypes["all"];
     return (
         <React.Fragment>
+            <Helmet>
+                <title>{Config.site} - {pageType.title}</title>
+                <meta name="description" content={pageType.description} ></meta>
+            </Helmet>
             <main role="main-inner-wrapper" className="container">
                 <div className="row">
                     <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
@@ -48,7 +54,7 @@ const Posts = (props) => {
                             {
                                 props.posts.items.filter((o, i) => i % 2 != 0).map((md, index) => {
                                     let title = md.title;
-                                    md.metas.tags.forEach(o => {      
+                                    md.metas.tags.forEach(o => {
                                         if (TemplateConfig.titleTags.includes(o)) {
                                             title = "[" + o + "] " + title;
                                         }
@@ -79,7 +85,7 @@ const Posts = (props) => {
                             {
                                 props.posts.items.filter((o, i) => i % 2 == 0).map((md, index) => {
                                     let title = md.title;
-                                    md.metas.tags.forEach(o => {      
+                                    md.metas.tags.forEach(o => {
                                         if (TemplateConfig.titleTags.includes(o)) {
                                             title = "[" + o + "] " + title;
                                         }
