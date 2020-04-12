@@ -47,13 +47,13 @@ const Home = (props) => {
                                                         }
                                                     });
                                                     title = title.length > 20 ? title.substring(0, 20) + '...' : title;
-                                                    if (i <= 11) {
+                                                    if (i <= 10) {
                                                         return (
                                                             <p key={i} className='home-post-list'>{post.metas.date} {title}</p>
                                                         )
                                                     }
                                                 })}
-                                            <p className="home-post-more">等其他 {post_items.length-11} 篇</p>
+                                            <p className="home-post-more">等共 {post_items.length} 篇</p>
                                         </div>
                                         <a href={item.link}>了解更多</a>
                                     </figcaption>
