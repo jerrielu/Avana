@@ -98,6 +98,11 @@ figure.effect-oscar:hover {
 
 figure.effect-oscar img {
     opacity: 0.6!important;
+    
+}
+
+figure img{
+    min-height: 400px!important;
 }
 
 .searchBox input[type="text"]{
