@@ -20,7 +20,7 @@ const FooterTemplate = () => {
                         }
                     </ul>
                 </nav>
-                <p className="copy-right">Copyright (c) 2019 <a href="/">{Config.site}</a>, Template By <a rel="nofollow" target="_blank" href="http://www.designstub.com">DesignStub</a>. Powered By <a href="https://www.sporule.com" target="_blank" rel="nofollow">Sporule</a>. </p>
+                <p className="copy-right">Copyright (c) 2020 <a href="/">{Config.site}</a>, Template By <a rel="nofollow" target="_blank" href="http://www.designstub.com">DesignStub</a>. Powered By <a href="https://www.sporule.com" target="_blank" rel="nofollow">Sporule</a>. </p>
             </footer>
         </React.Fragment>
 
