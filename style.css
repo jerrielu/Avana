@@ -116,3 +116,14 @@ figure.effect-oscar img {
 header[role="header"] nav ul{
     padding-top: 30px!important;
 }
+
+.home-post-list{
+    text-align: left;
+}
+
+.home-post-more{
+    text-align: right;
+}
+.margin-top-30{
+    margin-top:30px!important;
+}
