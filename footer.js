@@ -21,7 +21,7 @@ const FooterTemplate = () => {
                         }
                     </ul>
                 </nav>
-                <p className="copy-right">Copyright (c) 2020 <Link to="/">{Config.site}</Link>, Template By <Link rel="nofollow" to="_blank" href="http://www.designstub.com">DesignStub</Link>. Powered By <Link to="https://www.sporule.com" target="_blank" >Sporule</Link>. </p>
+                <p className="copy-right">Copyright (c) 2020 <Link to="/">{Config.site}</Link>, Template By <a rel="nofollow" to="_blank" href="http://www.designstub.com">DesignStub</a>. Powered By <a to="https://www.sporule.com" target="_blank" >Sporule</a>. </p>
             </footer>
         </React.Fragment>
 
