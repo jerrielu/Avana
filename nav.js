@@ -1,6 +1,7 @@
 import React from "react";
 import Config from "../_config";
 import TemplateConfig from "./_templateConfig";
+import {Link} from "react-router-dom";
 
 const NavTemplate = () => {
 
@@ -8,7 +9,7 @@ const NavTemplate = () => {
         <header role="header">
             <div className="container">
                 <h1>
-                    <a href="/" title={Config.site}><img src={Config.logo} title={Config.site} alt={Config.site} className="logo" /></a>
+                    <Link to="/" title={Config.site}><img src={Config.logo} title={Config.site} alt={Config.site} className="logo" /></Link>
                 </h1>
                 <nav role="header-nav" className="navy">
                     <ul>
@@ -21,7 +22,7 @@ const NavTemplate = () => {
                         {
                             Object.keys(TemplateConfig.navs).map((index, key) => {
                                 return (
-                                    <li className="nav-item" key={index}><a href={TemplateConfig.navs[index]} title={index}>{index}</a></li>
+                                    <li className="nav-item" key={index}><Link to={TemplateConfig.navs[index]} title={index}>{index}</Link></li>
                                 );
                             })
                         }

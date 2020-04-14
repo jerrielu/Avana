@@ -3,6 +3,7 @@ import Config from "../../_config";
 import TemplateConfig from "../_templateConfig";
 import * as PostHelper from "../../src/helpers/postHelper";
 import queryString from 'query-string';
+import {Link} from "react-router-dom";
 
 const Home = (props) => {
 
@@ -55,7 +56,7 @@ const Home = (props) => {
                                                 })}
                                             <p className="home-post-more">等共 {post_items.length} 篇</p>
                                         </div>
-                                        <a href={item.link}>了解更多</a>
+                                        <Link to={item.link}>了解更多</Link>
                                     </figcaption>
                                 </figure>
                             </section>

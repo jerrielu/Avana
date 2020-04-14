@@ -1,5 +1,6 @@
 import React from "react"
 import TemplateConfig from "./_templateConfig";
+import {Link} from "react-router-dom";
 
 const PostTemplate = (props) => {
     let title = props.post.title;
@@ -26,7 +27,7 @@ const PostTemplate = (props) => {
                         {props.post.metas.categories.map((category, index) => {
                             return (
                                 <span className="entry__tax-list" key={index}>
-                                    <a href={"/posts/categories/" + category+"?pagetype=search"}>{category.toUpperCase()}</a>
+                                    <Link to={"/posts/categories/" + category+"?pagetype=search"}>{category.toUpperCase()}</Link>
                                 </span>
                             );
                         })}
@@ -37,9 +38,9 @@ const PostTemplate = (props) => {
                         <span className="entry__tax-list entry__tax-list--pill">
                             {props.post.metas.tags.map((tag, index) => {
                                 return (
-                                    <a key={index} href={"/posts/?pagetype=search&tags=" + tag}>
+                                    <Link key={index} to={"/posts/?pagetype=search&tags=" + tag}>
                                         {tag}
-                                    </a>
+                                    </Link>
                                 );
                             })}
                         </span>

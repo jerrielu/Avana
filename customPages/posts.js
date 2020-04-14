@@ -2,6 +2,7 @@ import React from "react";
 import TemplateConfig from "../_templateConfig";
 import Config from "../../_config";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const Posts = (props) => {
     var prev;
@@ -10,14 +11,14 @@ const Posts = (props) => {
 
     if (props.prev) {
         prev = <span className="prev">
-            <a href="#" className="fas fa-arrow-left nav-icon" onClick={props.prev}>
-            </a>
+            <Link to="#" className="fas fa-arrow-left nav-icon" onClick={props.prev}>
+            </Link>
         </span>;
     }
     if (props.next) {
         next = <span className="next">
-            <a href="#" className="fas fa-arrow-right nav-icon" onClick={props.next}>
-            </a>
+            <Link to="#" className="fas fa-arrow-right nav-icon" onClick={props.next}>
+            </Link>
         </span>;
     }
     if (props.categories.length > 0) {
@@ -43,7 +44,7 @@ const Posts = (props) => {
                                     pageType.filterTags.map((tag, index) => {
                                         var link = "/posts/categories/" + props.categories[0] + "?pagetype=" + pageType.pageType + "&tags=" + [...pageType.tags, tag].join(",") + "&extags=" + [...pageType.extags];
                                         return (
-                                            <a key={index} className="filterTag" href={link}>{tag}</a>
+                                            <Link key={index} className="filterTag" to={link}>{tag}</Link>
                                         );
                                     })
                                 }
@@ -62,14 +63,14 @@ const Posts = (props) => {
                                     return (
                                         <li key={index}>
                                             <section className="blog-content">
-                                                <a href={md.link}>
+                                                <Link to={"/" + md.link}>
                                                     <figure>
                                                         <div className="post-date">
                                                             <span>{new Date(md.metas.date).getDate()}</span> {md.metas.date.substring(0, 7)}
                                                         </div>
                                                         <img src={md.metas.coverimage} alt="" className="img-responsive" />
                                                     </figure>
-                                                </a>
+                                                </Link>
                                                 <article>
                                                     {title}
                                                 </article>
@@ -93,14 +94,14 @@ const Posts = (props) => {
                                     return (
                                         <li key={index}>
                                             <section className="blog-content">
-                                                <a href={md.link}>
+                                                <Link to={"/" + md.link}>
                                                     <figure>
                                                         <div className="post-date">
                                                             <span>{new Date(md.metas.date).getDate()}</span> {md.metas.date.substring(0, 7)}
                                                         </div>
                                                         <img src={md.metas.coverimage} alt="" className="img-responsive" />
                                                     </figure>
-                                                </a>
+                                                </Link>
                                                 <article>
                                                     {title}
                                                 </article>
