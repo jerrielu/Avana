@@ -33,27 +33,26 @@ const Posts = (props) => {
             </Helmet>
             <main role="main-inner-wrapper" className="container">
                 <div className="row">
+                    <article role="pge-title-content" className="blog-header">
+                        <header>
+                            <h2><span>{pageType.title}</span>{pageType.subTitle}</h2>
+                        </header>
+                        <p>{pageType.description}</p>
+                        <div className="filterTagContainer">
+                            {
+                                pageType.filterTags.map((tag, index) => {
+                                    var link = "/posts/categories/" + props.categories[0] + "?pagetype=" + pageType.pageType + "&tags=" + [...pageType.tags, tag].join(",") + "&extags=" + [...pageType.extags];
+                                    return (
+                                        <Link key={index} className="filterTag" to={link}>{tag}</Link>
+                                    );
+                                })
+                            }
+                        </div>
+                    </article>
                     <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
-                        <article role="pge-title-content" className="blog-header">
-                            <header>
-                                <h2><span>{pageType.title}</span>{pageType.subTitle}</h2>
-                            </header>
-                            <p>{pageType.description}</p>
-                            <div className="filterTagContainer">
-                                {
-                                    pageType.filterTags.map((tag, index) => {
-                                        var link = "/posts/categories/" + props.categories[0] + "?pagetype=" + pageType.pageType + "&tags=" + [...pageType.tags, tag].join(",") + "&extags=" + [...pageType.extags];
-                                        return (
-                                            <Link key={index} className="filterTag" to={link}>{tag}</Link>
-                                        );
-                                    })
-                                }
-                            </div>
-                        </article>
-
                         <ul className="grid-lod effect-2" id="grid">
                             {
-                                props.posts.items.filter((o, i) => i % 2 != 0).map((md, index) => {
+                                props.posts.items.filter((o, i) => i % 2 == 0).map((md, index) => {
                                     let title = md.title;
                                     md.metas.tags.forEach(o => {
                                         if (TemplateConfig.titleTags.includes(o)) {
@@ -84,7 +83,7 @@ const Posts = (props) => {
                     <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <ul className="grid-lod effect-2" id="grid">
                             {
-                                props.posts.items.filter((o, i) => i % 2 == 0).map((md, index) => {
+                                props.posts.items.filter((o, i) => i % 2 != 0).map((md, index) => {
                                     let title = md.title;
                                     md.metas.tags.forEach(o => {
                                         if (TemplateConfig.titleTags.includes(o)) {
