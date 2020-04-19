@@ -51,7 +51,7 @@ const TemplateConfig = {
         "uk-play": {
             "title": "英国玩什么",
             "subTitle": "攻略",
-            "description":"",
+            "description":"来英国不能错过的迷人风景",
             "tags":["英国"],
             "extags":[],
             "filterTags": ["英格兰","威尔士"," 苏格兰","伦敦","推荐","精选","必去"],
@@ -60,7 +60,7 @@ const TemplateConfig = {
         "uk-guide": {
             "title": "英国很贵么",
             "subTitle": "签证、交通、住宿及餐饮预定",
-            "description":"",
+            "description":"英国消费高？我们想要选对的，不选贵的！",
             "tags":["英国"],
             "extags":[],
             "filterTags": ["英格兰","威尔士"," 苏格兰","伦敦","推荐","精选","必去"],
@@ -69,7 +69,7 @@ const TemplateConfig = {
         "other-tour": {
             "title": "英国之外呢",
             "subTitle": "其他地区游记",
-            "description":"",
+            "description":"世界那么大，我们当然不能止步英国啦！",
             "tags":[],
             "extags":["英国"],
             "filterTags": [],
