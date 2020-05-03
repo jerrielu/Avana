@@ -70,9 +70,9 @@ const TemplateConfig = {
             "title": "英国之外呢",
             "subTitle": "其他地区游记",
             "description":"世界那么大，我们当然不能止步英国啦！",
-            "tags":["法国","荷兰","韩国","柬埔寨","美国","葡萄牙","泰国","希腊","中国"],
+            "tags":[],
             "extags":["英国"],
-            "filterTags": [],
+            "filterTags": ["法国","荷兰","韩国","柬埔寨","美国","葡萄牙","泰国","希腊","中国"],
             "pageType": "other-tour"
         }
     },
