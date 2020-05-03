@@ -70,7 +70,7 @@ const TemplateConfig = {
             "title": "英国之外呢",
             "subTitle": "其他地区游记",
             "description":"世界那么大，我们当然不能止步英国啦！",
-            "tags":[],
+            "tags":["法国","荷兰","韩国","柬埔寨","美国","葡萄牙","泰国","希腊","中国"],
             "extags":["英国"],
             "filterTags": [],
             "pageType": "other-tour"
@@ -113,7 +113,7 @@ const TemplateConfig = {
             "link": "/posts/categories/游记?extags=英国&pagetype=other-tour",
         }
     ],
-    titleTags:["春","夏","秋","冬","推荐","精选","必去"]
+    titleTags:["春","夏","秋","冬","推荐","精选","必去","法国","荷兰","韩国","柬埔寨","美国","葡萄牙","泰国","希腊","中国"]
     ,
     aboutUs:{
         "title":"关于吃什么",
