@@ -21,7 +21,7 @@ const NavTemplate = (props) => {
                     <ul>
                         <li>
                             <form role="search" className="searchBox" method="get" onSubmit={onSubmit}>
-                                <input type="text" placeholder="输入关键字搜索" name="search" onChange={o => { }} />
+                                <input type="text" placeholder="Search Box" name="search" onChange={o => { }} />
                             </form>
                         </li>
                         {
