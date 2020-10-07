@@ -30,6 +30,18 @@ const Home = (props) => {
                         const excludedTags = excludedTagsString ? excludedTagsString.split(",") : [];
                         const searchString = queryString.parse(location_search).search || "";
                         const post_items = PostHelper.getPostsByPage(props.posts, page, true, searchString, categories, tags, excludedTags).items
+                        if (post_items.length==0){
+                                                    return (
+                            <section key={index} className="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
+                                <figure className="effect-oscar">
+                                    <img src={item.coverImage} alt="" className="img-responsive" />
+                                    <figcaption>
+                                    <p className="home-post-more">暂时还没有文章</p>
+                                    </figcaption>
+                                </figure>
+                            </section>
+                        ) 
+                        }
                         return (
                             <section key={index} className="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
                                 <figure className="effect-oscar">
