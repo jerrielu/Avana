@@ -46,7 +46,6 @@ const PostTemplate = (props) => {
                         </span>
                     </div>
                 </div>
-                {props.disqus}
             </div>
         </main>
 
